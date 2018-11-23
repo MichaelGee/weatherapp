@@ -11,6 +11,7 @@ const Weather =(props)=> (
             {props.humidity && <li className="list-group-item"> <p>Humidity: {props.humidity}</p></li>}
             {props.description && <li className="list-group-item"><p>Description: {props.description}</p></li>}
             {props.error && <li className="list-group-item"><p>{props.error}</p></li>}
+            {props.icon && <li className="list-group-item"><img src={`http://openweathermap.org/img/w/${props.icon}.png`}/></li>}
             </ul>
             </div>}
         </div>

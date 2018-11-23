@@ -3,7 +3,7 @@ import './App.css';
 import Title from "./components/title";
 import Form from "./components/form";
 import Weather from "./components/weather";
-
+import Footer from "./components/footer";
 
 const API_KEY = "8c679e7fb556ba43b9f82a3845265f46";
 
@@ -15,6 +15,7 @@ class App extends Component {
       description: undefined,
       country: undefined,
       humidity: undefined,
+      icon: undefined,
       error: undefined
     }
 
@@ -34,6 +35,7 @@ class App extends Component {
         temprature : data.main.temp,
         humidity: data.main.humidity,
         city : data.name,
+        icon: data.weather[0].icon,
         description: data.weather[0].description,
         error : ""
       })
@@ -44,6 +46,7 @@ class App extends Component {
         humidity: undefined,
         city : undefined,
         description: undefined,
+        icon : undefined,
         error : "Please enter some values"
       });
     }
@@ -62,10 +65,13 @@ class App extends Component {
         temprature={this.state.temprature}
         humidity={this.state.humidity}
         description={this.state.description}
+        icon={this.state.icon}
         error = {this.state.error}
         />
+       
         </div>
       </div>
+       <Footer/>
       </div>
     );
   }
