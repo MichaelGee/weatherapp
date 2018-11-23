@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
   margin: 0;
   padding: 0;
-  background: #f3f8f2;  
+  background: #011936; 
+  font-family: 'Open Sans', sans-serif; 
 }
 
 
@@ -20,6 +23,17 @@ body {
 }
 .btn{
   float: right !important;
-  background: #3581b8 !important;
+  background: #ED254E !important;
+}
+
+.subtext{
+  color: white !important;
+}
+
+.title{
+  margin-top : 12px;
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 10rem !important;
 }
 
