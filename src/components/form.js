@@ -8,7 +8,7 @@ import React from 'react'
     <h2 className="text-center">Add a city and country</h2>
     <input type="text" class="form-control mb-2" name='city' placeholder="City"/>
     <input type="text" class="form-control mb-2" name='country' placeholder="Country"/>
-    <button className="btn btn-primary">Submit</button>
+    <button className="btn btn-primary align-items-right">Submit</button>
     </form>
    </div>
    </div>

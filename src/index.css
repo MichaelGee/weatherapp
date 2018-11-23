@@ -1,10 +1,24 @@
 body {
   margin: 0;
   padding: 0;
-  
+  background: #f3f8f2;  
 }
+
+
 
 
 .form{
   margin-top: 200px;
+}
+
+.card{
+  width: 18rem;
+}
+
+.weather{
+  margin-top: 25px;
+}
+.btn{
+  float: right !important;
+  background: #3581b8 !important;
 }

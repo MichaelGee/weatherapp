@@ -2,7 +2,7 @@ import React from 'react'
 
 const Title =()=>(
   <div className="text-center">
-  <h1>Weather Watch</h1>
+  <h1>WeatherLens</h1>
   </div>
 );
 
