@@ -30,7 +30,6 @@ class App extends Component {
     const data = await api_call.json();
 
     if(city && country){
-      console.log(data);
       this.setState({
         temprature : data.main.temp,
         humidity: data.main.humidity,
@@ -40,7 +39,6 @@ class App extends Component {
         error : ""
       })
     }else{
-      console.log(data);
       this.setState({
         temprature : undefined,
         humidity: undefined,
