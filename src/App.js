@@ -26,10 +26,11 @@ class App extends Component {
     const country = e.target.elements.country.value;
 
 
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}, ${country}id=524901&units=metric&APPID=${API_KEY}`);
+    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}, ${country}id=524901&units=metric&APPID=${API_KEY}`);
     const data = await api_call.json();
 
     if(city && country){
+      console.log(data);
       this.setState({
         temprature : data.main.temp,
         humidity: data.main.humidity,
@@ -39,6 +40,7 @@ class App extends Component {
         error : ""
       })
     }else{
+      console.log(data);
       this.setState({
         temprature : undefined,
         humidity: undefined,
