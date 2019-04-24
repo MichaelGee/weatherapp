@@ -11,7 +11,9 @@ body {
 
 
 .form{
-  margin-top: 200px;
+  margin-top: 60px;
+ 
+  width: 70%;
 }
 
 .card{
@@ -21,9 +23,15 @@ body {
 .weather{
   margin-top: 25px;
 }
+
+.intro{
+  color: white;
+  margin-top: 80px;
+}
+
 .btn{
-  float: right !important;
-  background: #ED254E !important;
+  width: 100%;
+  
 }
 
 .subtext{
@@ -42,3 +50,8 @@ body {
   margin-top: 180px;
 }
 
+@media screen and (max-width: 434px ){
+  .form{
+    width: 90%;
+  }
+}
